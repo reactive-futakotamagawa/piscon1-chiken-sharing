@@ -74,3 +74,5 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4;
 
 ALTER TABLE `items` ADD INDEX `idx_items_created_at_id` (`created_at` DESC, `id` DESC);
+ALTER TABLE `items` ADD INDEX `idx_items_seller_id_status` (`seller_id`, `status`);
+ALTER TABLE `items` ADD INDEX `idx_items_buyer_id` (`buyer_id`);
