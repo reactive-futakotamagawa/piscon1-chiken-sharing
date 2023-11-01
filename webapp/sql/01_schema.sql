@@ -73,4 +73,4 @@ CREATE TABLE `categories` (
   `category_name` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4;
 
-ALTER TABLE `items` ADD INDEX `idx_items_created_at_id` (`created_at` DESC, `id` DESC)
+ALTER TABLE `items` ADD INDEX `idx_items_created_at_id` (`created_at` DESC, `id` DESC);
